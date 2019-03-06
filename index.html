@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Arivazhagan L</title>
     <meta name="viewport" content="width=device-width">
+    <meta name="theme-color" content="#29434d" />
     <meta name="description" content="Arivazhagan L, an experienced software engineer in Chennai">
     <meta name="keywords" content="Engineering Manager, Software Engineer, Java, Spring, Spring boot, Chennai, Startups, Agile, Jira, Apache camel, Trainer" />
     <meta name="author" content="Arivazhagan">
     <link rel="canonical" href="https://aariv.github.io/">
     <link rel="alternate" type="application/rss+xml" title="RSS" href="./feed.xml">
     <link rel="icon" type="image/png" href="/img/face.png" sizes="16x16" />
+  <link rel="manifest" href="./manifest.json" />
 
     <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <link rel="stylesheet" href="./style.css">
@@ -31,6 +33,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
 </head>
 
     <body id="page-top" class="index">
@@ -67,6 +70,9 @@
                     </li>
                     <li class="page-scroll">
                         <a href="#contact">Contact</a>
+                    </li>
+		  <li class="page-scroll">
+                        <a href="#resume">Resume</a>
                     </li>
                 </ul>
             </div>
@@ -227,12 +233,25 @@ meeting interesting people in various sector.
 		    </ul>
                 </div>
             </div>
+		<!-- Toast msg -->
+		<div class="toast__msg"></div>
         </div>
     </section>
 
 
     
     <!-- Contact Section -->
+<section id="resume">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<h2><a href="ArivazhaganL.pdf" download>Resume</a></h2>
+				<hr class="star-primary">
+			</div>
+		</div>
+	</div>
+</section>
+
 <section id="contact">
 	<div class="container">
 		<div class="row">
@@ -313,7 +332,7 @@ meeting interesting people in various sector.
                         </ul>
                     </div>
                     <div class="footer-col col-md-4">
-                        <h3></h3>
+                        <h3></h3><meta name="theme-color" content="#29434d" />
                         <p></p>
                     </div>
                 </div>
@@ -432,7 +451,7 @@ meeting interesting people in various sector.
         </div>
     </div>
 
-    <div class="portfolio-modal modal fade" id="portfolioModal-3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="portfolioModal  <link rel="manifest" href="manifest.json" />-3" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -466,7 +485,7 @@ meeting interesting people in various sector.
                                 </li>
                                 <li>Technologies:
                                     <strong>
-					Ruby on Rails, PostgreSQL, Twilio
+					Ruby on Rails, Po<meta name="theme-color" content="#29434d" />stgreSQL, Twilio
                                     </strong>
                                 </li>
                             </ul>
@@ -540,7 +559,52 @@ meeting interesting people in various sector.
     <script src="./js/jqBootstrapValidation.js"></script>
     
     <script src="./js/contact_me_static.js"></script>
+     <script src="./toast.js"></script>
+    <script src="./main.js"></script>
     
+<script src="https://lex-web-ui-codebuilddeploy-4kh1iu3hc-webappbucket-1ah9p124z7ny2.s3.amazonaws.com/lex-web-ui-loader.min.js"></script>
+<!--
+<script>
+  var loaderOpts = {
+    baseUrl: 'https://lex-web-ui-codebuilddeploy-4kh1iu3hc-webappbucket-1ah9p124z7ny2.s3.amazonaws.com/'
+  };
+  var loader = new ChatBotUiLoader.IframeLoader(loaderOpts);
+  loader.load()
+    .catch(function (error) { console.error(error); });
+</script> -->
+
+<script src="https://lex-web-ui-codebuilddeploy-4kh1iu3hc-webappbucket-1ah9p124z7ny2.s3.amazonaws.com/lex-web-ui-loader.min.js"></script>
+   <script>
+    // Point the baseUrl to download the dependencies from the site hosting
+    // the loader and the chatbot UI files
+    // This url should host the JavaScript and CSS files in the dist directory
+    var loaderOpts = {
+      baseUrl: 'https://lex-web-ui-codebuilddeploy-4kh1iu3hc-webappbucket-1ah9p124z7ny2.s3.amazonaws.com/'
+    }
+    // ChatBotUiLoader contains the IframeLoader constructor
+    // Instantiate the loader and pass the loader options
+    var lexWebUiLoader = new ChatBotUiLoader.IframeLoader(loaderOpts);
+
+    // You can override the chatbot UI config by passing a parameter
+    // if the iframe page is hosted on a different site,
+    // you should configure the parentOrigin and iframeOrigin
+    var chatbotUiconfig = {
+      ui: {
+        // origin of the parent site where you are including the chatbot UI
+        parentOrigin: 'https://lex-web-ui-codebuilddeploy-4kh1iu3hc-webappbucket-1ah9p124z7ny2.s3.amazonaws.com'
+      },
+      iframe: {
+        // origin hosting the HTML file that will be embedded in the iframe
+        iframeOrigin: 'https://lex-web-ui-codebuilddeploy-4kh1iu3hc-webappbucket-1ah9p124z7ny2.s3.amazonaws.com'
+      }
+    };
+
+    // load the iframe
+    lexWebUiLoader.load(chatbotUiconfig)
+      .catch(function (error) {
+        console.error('chatbot UI failed to load', error);
+      });
+  </script>
 
 	<script src="./lex-web-ui-loader.min.js"></script>
 	<script>
