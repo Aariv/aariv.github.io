@@ -542,6 +542,16 @@ meeting interesting people in various sector.
     <script src="./js/contact_me_static.js"></script>
     
 
+	<script src="./lex-web-ui-loader.min.js"></script>
+	<script>
+	  var loaderOpts = {
+	    baseUrl: 'https://lex-web-ui-codebuilddeploy-s866wd3j6-webappbucket-19gb9rj6cfc3w.s3.amazonaws.com/'
+	  };
+	  var loader = new ChatBotUiLoader.IframeLoader(loaderOpts);
+	  loader.load()
+	    .catch(function (error) { console.error(error); });
+	</script>
+
     <!-- Custom Theme JavaScript -->
     <script src="./js/freelancer.js"></script>
 
